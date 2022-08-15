@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Criar um novo lead"  icon-name="standard:lead">
+        <div class="slds-p-horizontal_small">
+            <lightning-record-edit-form object-api-name="Lead" onsuccess={handleSuccess} >
+                <lightning-messages> </lightning-messages>
+                <lightning-input-field field-name="FirstName"> 
+                </lightning-input-field>
+                <lightning-input-field field-name="LastName"> 
+                </lightning-input-field>      
+                <lightning-input-field field-name="Company"> 
+                </lightning-input-field>
+                <lightning-input-field field-name="CNPJ__c"> 
+                </lightning-input-field>
+                <lightning-input-field field-name="City"> 
+                </lightning-input-field>
+                <lightning-input-field field-name="State"> 
+                </lightning-input-field>
+                <lightning-input-field field-name="Phone"> 
+                </lightning-input-field>
+                <lightning-input-field field-name="ConsumoDeEnergiaRS__c"> 
+                </lightning-input-field>
+                <lightning-input-field field-name="ConsumoDeEnergiaKWH__c"> 
+                </lightning-input-field>
+                <lightning-input-field field-name="Status"> 
+                </lightning-input-field>
+                
+                <lightning-button
+                    class="slds-m-top_small"
+                    type="submit"
+                    label="Criar um lead"
+                >
+                </lightning-button>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>
