@@ -1,0 +1,17 @@
+import { LightningElement } from 'lwc';
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+export default class InsertLeads extends LightningElement {
+
+    handleSuccess(event){
+        this.showToast();
+    }
+    showToast() {
+        const event = new ShowToastEvent({
+            title: 'Sucesso',
+            message:
+                'O Lead foi criado com sucesso',
+                variant: 'success'
+        });
+        this.dispatchEvent(event);
+    }
+}
